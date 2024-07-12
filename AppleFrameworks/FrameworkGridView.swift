@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
+    private var framework = MockData.sampleFramework
+    private let columns: [GridItem] = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
+    
     var body: some View {
-        FrameworkTileView()
-        
+        LazyVGrid(columns: columns){
+            FrameworkTileView(framework: framework)
+            FrameworkTileView(framework: framework)
+            FrameworkTileView(framework: framework)
+            
+        }
     }
 }
 
@@ -19,10 +31,3 @@ struct FrameworkGridView: View {
 }
 
 
-struct FrameworkTileView: View{
-    
-    var body: some View{
-        Text("Hello world")
-    }
-    
-}
