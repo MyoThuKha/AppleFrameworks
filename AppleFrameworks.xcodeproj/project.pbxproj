@@ -11,6 +11,7 @@
 		5C142AD62C4170D500D012F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C142AD52C4170D500D012F5 /* Assets.xcassets */; };
 		5C142AD92C4170D500D012F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C142AD82C4170D500D012F5 /* Preview Assets.xcassets */; };
 		5C2D4B472C41962C0051532C /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D4B462C41962C0051532C /* FrameworkGridView.swift */; };
+		5C2D4B492C4196FD0051532C /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D4B482C4196FD0051532C /* Framework.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		5C142AD52C4170D500D012F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C142AD82C4170D500D012F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C2D4B462C41962C0051532C /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		5C2D4B482C4196FD0051532C /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				5C142AD12C4170D400D012F5 /* AppleFrameworksApp.swift */,
 				5C142AD52C4170D500D012F5 /* Assets.xcassets */,
 				5C2D4B462C41962C0051532C /* FrameworkGridView.swift */,
+				5C2D4B482C4196FD0051532C /* Framework.swift */,
 				5C142AD72C4170D500D012F5 /* Preview Content */,
 			);
 			path = AppleFrameworks;
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C142AD22C4170D400D012F5 /* AppleFrameworksApp.swift in Sources */,
+				5C2D4B492C4196FD0051532C /* Framework.swift in Sources */,
 				5C2D4B472C41962C0051532C /* FrameworkGridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

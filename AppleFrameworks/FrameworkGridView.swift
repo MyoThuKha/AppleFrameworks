@@ -9,10 +9,20 @@ import SwiftUI
 
 struct FrameworkGridView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        FrameworkTileView()
+        
     }
 }
 
 #Preview {
     FrameworkGridView()
+}
+
+
+struct FrameworkTileView: View{
+    
+    var body: some View{
+        Text("Hello world")
+    }
+    
 }
