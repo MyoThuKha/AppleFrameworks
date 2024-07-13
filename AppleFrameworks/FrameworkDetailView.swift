@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct FrameworkDetailView: View {
+    @Binding var isShowDetail: Bool
     var framework = MockData.sampleFramework
     var body: some View {
         VStack{
-            
             HStack{
                 Spacer()
                 Button{
-                    print("Close detail")
+                    //                    isShowDetail.toggle()
+                    isShowDetail = false
                 } label: {
                     Image(systemName: "xmark")
                         .resizable()
@@ -42,6 +43,6 @@ struct FrameworkDetailView: View {
     }
 }
 
-#Preview {
-    FrameworkDetailView()
-}
+//#Preview {
+//    FrameworkDetailView(isShowDetail: $Moc, framework: <#T##Framework#>)
+//}

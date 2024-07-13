@@ -15,6 +15,8 @@ struct FrameworkGridView: View {
         GridItem(.flexible())
     ]
     
+    @StateObject var viewModel = FrameworkGridViewModel()
+    
     
     var body: some View {
         NavigationView{
@@ -23,9 +25,18 @@ struct FrameworkGridView: View {
                     ForEach(frameworks){
                         framework in
                         FrameworkTileView(framework: framework)
+                            .onTapGesture {
+                                viewModel.currentFramework = framework
+                            }
                     }
                 }
             }.navigationTitle("Apple Frameworks")
+                .sheet(isPresented: $viewModel.isShowDetail, content: {
+                    FrameworkDetailView(
+                        isShowDetail: $viewModel.isShowDetail,
+                        framework: viewModel.currentFramework ?? MockData.sampleFramework
+                    )
+                })
         }
     }
 }
