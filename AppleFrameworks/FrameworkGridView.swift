@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
-    private var framework = MockData.sampleFramework
+    private var frameworks = MockData.frameworks
     private let columns: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible()),
@@ -17,11 +17,15 @@ struct FrameworkGridView: View {
     
     
     var body: some View {
-        LazyVGrid(columns: columns){
-            FrameworkTileView(framework: framework)
-            FrameworkTileView(framework: framework)
-            FrameworkTileView(framework: framework)
-            
+        NavigationView{
+            ScrollView{
+                LazyVGrid(columns: columns){
+                    ForEach(frameworks){
+                        framework in
+                        FrameworkTileView(framework: framework)
+                    }
+                }
+            }.navigationTitle("Apple Frameworks")
         }
     }
 }

@@ -23,7 +23,7 @@ struct FrameworkTileView: View{
                 .fontWeight(.bold)
                 .scaledToFit()
                 .minimumScaleFactor(0.6)
-        }
+        }.padding()
     }
     
 }
