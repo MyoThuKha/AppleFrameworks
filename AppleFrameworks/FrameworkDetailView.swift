@@ -20,7 +20,7 @@ struct FrameworkDetailView: View {
                     Image(systemName: "xmark")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 25)
+                        .frame(width: 20)
                         .foregroundStyle(Color(.label))
                 }
                 .padding()
@@ -34,18 +34,10 @@ struct FrameworkDetailView: View {
             
             Spacer()
             
-            Button {
-                print("Hello world")
+            AFButton(label: "Learn More", onClick: {
                 
-            }
-            label: {
-                Text("Learn More")
-            }
-            .padding()
-            .frame(width: 300, height: 60)
-            .foregroundStyle(Color.white)
-            .background(Color.red.gradient)
-            .clipShape(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/))
+            })
+            
         }
     }
 }
